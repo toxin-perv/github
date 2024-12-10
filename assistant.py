@@ -13,7 +13,7 @@ def open_website():
             break
         
         
-        webbrowser.open(website)
+        webbrowser.open(f"www.{website}.com")
 
 
 open_website()
