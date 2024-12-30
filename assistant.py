@@ -12,8 +12,8 @@ def open_website():
             print("Exiting the program.")
             break
         
-        
-        webbrowser.open(f"www.{website}.com")
+        else:
+            webbrowser.open(f"www.{website}.com")
 
 
 open_website()
