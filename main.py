@@ -334,3 +334,19 @@
 #     return "<p>Hello, World!</p>"
 
 # app.run() 
+
+
+import pyautogui
+
+while True:
+    pyautogui.keyDown("r")
+    pyautogui.keyDown("a")
+    pyautogui.keyDown("n")
+    pyautogui.keyDown("j")
+    pyautogui.keyDown("a")
+    pyautogui.keyDown("n")
+
+    
+
+    
+
