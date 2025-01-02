@@ -3,10 +3,14 @@ from django.http import HttpResponse
 
 # Create your views here.
 def stock(request):
-    return HttpResponse("Stock Page")
-
+    # return HttpResponse("")
+    context = {'name' : 'ranjan', 'lan' : 'django'}
+    return render(request, 'stock.html', context)
 def blog(request):
     return HttpResponse("Blog Page")
 
 def admin(request):
-    return HttpResponse("admin Page")
+    return HttpResponse("admin page")
+
+def good(rwquest):
+    return HttpResponse("this work is good")
