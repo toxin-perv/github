@@ -7,3 +7,6 @@ def stock(request):
 
 def blog(request):
     return HttpResponse("Blog Page")
+
+def admin(request):
+    return HttpResponse("admin Page")
