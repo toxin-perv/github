@@ -18,8 +18,8 @@ from django.contrib import admin
 from django.urls import path, include
 from furniture import views
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', views.stock, name='stock'),
+    path('', views.home, name=('home')),
+    path('stock/', views.stock, name='stock'),
     path('blog/', views.blog, name='blog'),
     path('work/', include('furniture.urls'))
 ]
