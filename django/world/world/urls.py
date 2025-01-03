@@ -22,5 +22,7 @@ urlpatterns = [
     path('home/', views.home, name=('home')),
     path('stock/', views.stock, name='stock'),
     path('blog/', views.blog, name='blog'),
-    path('work/', include('furniture.urls'))
+    path('contact/', views.contact, name=('contact')),
+    path('work/', views.work, name=('work'))
+    
 ]
