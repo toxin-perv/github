@@ -9,8 +9,8 @@ def home(request):
 
 def stock(request):
     # return HttpResponse("")
-    context = {'name' : 'ranjan', 'lan' : 'django'}
-    return render(request, 'stock.html', context)
+    # context = {'name' : 'ranjan', 'lan' : 'django'}
+    return render(request, 'stock.html',)
 
 
 def blog(request):
