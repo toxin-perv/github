@@ -10,7 +10,7 @@ def home(request):
 def stock(request):
     # return HttpResponse("")
     # context = {'name' : 'ranjan', 'lan' : 'django'}
-    return render(request, 'stock.html',)
+    return render(request, 'stock.html')
 
 
 def blog(request):
@@ -25,11 +25,16 @@ def contact(request):
     if request.method=="post":
         email = request.post['email']
         password = request.post['password']
-        print(email, password)
+        # print(email, password)
         ins = contact(email=email, password=password)
         ins.save()
         print("The data has been written to the database")
 
 
     return render(request, 'contact.html')
+
+
     
+
+
+     
