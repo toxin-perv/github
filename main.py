@@ -345,3 +345,79 @@
 #     pyautogui.keyDown("j")
 #     pyautogui.keyDown("a")
 #     pyautogui.keyDown("n")
+
+
+#code for finding factorial
+# n = int(input())
+
+# def fact(n):
+#     if n == 0 or n == 1:
+#         return 1
+#     else:
+#         return n*fact(n-1)
+    
+# print(fact(n))
+
+
+#code for finding reverse of a number given
+# n = int(input("enter the number : "))
+
+# absn = abs(n)
+# rev = absn % 10
+# absn = absn // 10
+# while (absn > 0):
+#     r = absn % 10
+#     absn = absn // 10
+#     rev = rev*10 + r
+
+# if (n >= 0):
+#     print(rev)
+# else:
+#     print(rev - rev*2)
+# n = int(input("enter the num : "))
+# def reverse_number(n):
+#     #revesre number intialiased to 0 
+#     reversed_num = 0
+#     is_negative = n < 0
+    
+#     abs_n = abs(n)
+    
+#     while abs_n:
+#         #take the last digit
+#         last_digit = abs_n % 10
+#         #add the last digit in reverse number by multiply to 10 and add it
+#         reversed_num = reversed_num * 10 + last_digit
+#         abs_n //= 10
+        
+#     print(-reversed_num if is_negative else reversed_num)
+
+# reverse_number(n)
+
+
+# caeser cypher in cryptography
+
+# alpha = 'abcdefghijklmnopqrstuvwxyz'
+# s = input("enter the name :")
+# t = ''
+# k = int(input("enter the number for difference :"))
+# for i in (0, len(s)) :
+#     t += (alpha[(((alpha.index(s[i])) + k) % 26)])
+
+# print(t)
+alpha = 'abcdefghijklmnopqrstuvwxyz'
+
+def shift_char(c):
+    """Shifts a character in the given string by a specified number of positions in the alphabet."""
+    index = alpha.index(c)
+    new_index = (index + shift_amount) % 26
+    return alpha[new_index]
+
+# Get input from the user
+name = input("Enter your name: ")
+shift_amount = int(input("Enter the number for difference: "))
+
+# Process each character
+shifted_alphabet = [shift_char(c) for c in name]
+
+# Print the result
+print(''.join(shifted_alphabet))
